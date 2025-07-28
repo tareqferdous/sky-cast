@@ -1,7 +1,12 @@
 import Page from "./Page";
+import WeatherProvider from "./provider/WeatherProvider";
 
 function App() {
-  return <Page />;
+  return (
+    <WeatherProvider>
+      <Page />
+    </WeatherProvider>
+  );
 }
 
 export default App;
